@@ -1,0 +1,28 @@
+{
+  "name": "tdtool-rest-api",
+  "version": "1.0.0",
+  "description": "A small RESTful API server for Telldus tdtool.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amlinger/tdtool-rest-api.git"
+  },
+  "keywords": [
+    "RESTful",
+    "tdtool"
+  ],
+  "author": "Anton Amlinger <anton.amlinger@gmail.com> (https://amlinger.me)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amlinger/homebridge-telldus-tdtool/issues"
+  },
+  "homepage": "https://github.com/amlinger/homebridge-telldus-tdtool#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "tellstick-confparser": "^1.0.2"
+  }
+}
