@@ -98,6 +98,9 @@ app.delete('/devices/:id', (req, res) => {
 })
 
 app.post('/devices/:id/:action', (req, res) => {
+  if (['on', 'off', 'learn'].indexOf(req.params.action) === -1)
+    return res.sendStatus(400)
+
   tdtool.run(`--${req.params.action}`, req.params.id).then(() => {
     res.sendStatus(200)
   })
